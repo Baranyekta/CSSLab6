@@ -1,0 +1,54 @@
+/* margin and padding to 0 for all elements from before */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font family, color, size, & alignment for body */
+body {
+    font-family: 'Tilt Warp', cursive;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* using flexbox, set display to flex & wrap to wrap for container */
+/* set content to space-between & align items for stretch */
+/* height = 30% of viewport width */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 30vw;
+  }
+  
+/* display = flex, justify-content & align-items to center for all sections */
+/* flex-basis = 33.3% and height = 100% */
+/* Bonus Challenge #1 */
+  .container section { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.3%;
+    height: 100%;
+  }
+  
+  /* background colors for each section below: */
+  .container section:nth-of-type(1) {
+    background-color: #F4442E;
+  }
+  
+  .container section:nth-of-type(2) {
+    background-color: #FC9E4F;
+  }
+  
+  .container section:nth-of-type(3) {
+    background-color: #EDD382;
+  }
+  
+  /* background color & height for footer */
+  footer {
+    background-color: #020122;
+    height: 10vh;
+  }
